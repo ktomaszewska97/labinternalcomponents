@@ -43,6 +43,6 @@ x.start()
 y = Thread(target=c, args=())      
 y.start()
 
-#z = Thread(target=c, args=())      
-#z.start()
+z = Thread(target=a, args=())      
+z.start()
 
