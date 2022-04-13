@@ -10,7 +10,7 @@ class Coordinator:
 
   # your code comes here
 
-  @rest.route('/api/v1/hello', methods=['POST'])
+  @rest.route('/api/v1/hello', methods=['GET'])
   def hello():
     print("Hello Coordinator")
     return jsonify({'result':'Hello Coordinator'})

@@ -1,6 +1,6 @@
 from osbd import Osbd
 from coordinator import Coordinator
-
+from agent import Agent
 
 from threading import Thread
 from flask import Flask, render_template, request, jsonify
@@ -33,9 +33,16 @@ def c():
   coord = Coordinator("0.0.0.0",5001)
   coord.go()
 
+def a():
+  agent = Agent("0.0.0.0",5002)
+  agent.go()
+
 x = Thread(target=f, args=())
 x.start()
 
 y = Thread(target=c, args=())      
 y.start()
+
+#z = Thread(target=c, args=())      
+#z.start()
 
