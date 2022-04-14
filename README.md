@@ -2,6 +2,34 @@
 
 Contains all components which run at the prosumer or within the Oli-Box. Coordinator, Bidding-Agent, Poolingplatform, GUI, OBS-D , openEMS
 
+## component ports:
+
+* OBSd: 5000
+* Bidding Agent: 5001
+* Pooling Platform: 5002
+* Community platform: 5003
+* OpenEMS: 5004
+* Koordinator: 5004
+
+## endpoints format:
+
+ip:[port]/api/v1/<component_name>/<operation>
+
+for example, for bidding agent the endpoint would be:
+```
+ip:[port]/api/v1/agent/agent2smbs
+```
+
+### List of component names: 
+
+* Bidding Agent: "agent"
+* Pooling platform: "pp"
+* Community platform: "cp"
+
+Operation names would be same as interfaces json naming conventions
+
+_____________________________________________________________________________
+
 ## Getting started
 
 To make it easy for you to get started with GitLab, here's a list of recommended next steps.

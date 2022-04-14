@@ -1,3 +1,4 @@
+import config
 from osbd import Osbd
 from coordinator import Coordinator
 from agent import Agent

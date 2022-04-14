@@ -17,6 +17,10 @@ class Agent:
   def agent2smbs():
     return jsonify({'prosumerId': 'e15017b1-f0b9-409c-961d-2cf409c12b31','timeSlot': '2022-02-17T10:30:00+00:00','energyInKwh': -500,'priceInEuroPerKwh': 0.5,  'gridLocation': '',  'P2P-Clearings':'blablabla' })
 
+  @rest.route('/api/v1/agent/obsd2prediction')
+  def agent2predict():
+    return jsonify({'prosumerId': 'e15017b1-f0b9-409c-961d-2cf409c12b31','timeSlot': '2022-02-17T10:30:00+00:00','energyInKwh': -500,'priceInEuroPerKwh': 0.5,  'gridLocation': '',  'P2P-Clearings':'blablabla' })
+
 
   def go(self):
     rest.run(host=self.hostname, port=self.portnumber)
