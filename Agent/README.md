@@ -1,0 +1,2 @@
+# Bidding Agent Readme
+
